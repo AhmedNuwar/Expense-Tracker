@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Expense Tracker</h1>
+    <form id="budget-form">
+      <input type="number" id="budget-input" placeholder="Set Budget (EGP)" required>
+      <button type="submit">Set Budget</button>
+    </form>
+    <div class="budget-info">
+      <h3>Budget: <span id="budget-amount">0</span> EGP</h3>
+      <h3>Remaining: <span id="remaining-amount">0</span> EGP</h3>
+    </div>
+    <form id="expense-form">
+      <input type="text" id="expense-name" placeholder="Expense Name" required>
+      <input type="number" id="expense-amount" placeholder="Amount (EGP)" required>
+      <button type="submit">Add Expense</button>
+    </form>
+    <h2>Expenses</h2>
+    <ul id="expense-list"></ul>
+    <div class="total">
+      <h3>Total Spent: <span id="total-amount">0</span> EGP</h3>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
